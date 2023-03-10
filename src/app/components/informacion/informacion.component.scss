@@ -1,0 +1,17 @@
+h4 {
+  color: antiquewhite;
+}
+
+.animacion {
+  animation: animate infinite;
+  animation-duration: 1.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}

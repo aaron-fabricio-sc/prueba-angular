@@ -10,9 +10,10 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { ImagesModuleModule } from './images-module/images-module.module';
 import { ImagenesServices } from './images-module/images/images_service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { InformacionComponent } from './components/informacion/informacion.component';
 
 @NgModule({
-  declarations: [AppComponent, NavigationComponent],
+  declarations: [AppComponent, NavigationComponent, InformacionComponent],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
