@@ -1,27 +1,16 @@
 # Prueba Angular
 
-Este Proyecto se genero con la versión version 14.2.4 de Angular.
+Este Proyecto se genero con la versión 14.2.4 de Angular.
 
-## Development server
+## Que necesitas tener instalado en tu equipo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Lo principal que debes tener instalado es NODEJS y GIT.
+Una vez instalado debes descargar el Cliente de Angular.
 
-## Code scaffolding
+Esto se logra ejecutando en la consola el siguiente comando `npm install @angular/cli`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Esto es para poder abrir aplicaciones hechas en angular
 
-## Build
+## Como abrir el Proyecto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Una vez descargado la aplicación lo primero que se debe hacer es instalar los paquetes con NPM, abre la terminal en la carpeta y escribe el siguiente comando `npm install`. Luego de que se instale los paquetes para ejecutar la aplicación escribe el siguinte comando `ng serve -o` La aplicacion se abrira en el navegador con la ruta`http://localhost:3000/`.
