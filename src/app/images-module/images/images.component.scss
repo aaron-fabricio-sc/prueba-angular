@@ -4,3 +4,9 @@
 .card_name {
   background: rgb(206, 206, 206);
 }
+.carta {
+  transition: 0.5s ease;
+}
+.carta:hover {
+  transform: scale(1.2);
+}
