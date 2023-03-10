@@ -13,4 +13,4 @@ Esto es para poder abrir aplicaciones hechas en angular
 
 ## Como abrir el Proyecto
 
-Una vez descargado la aplicación lo primero que se debe hacer es instalar los paquetes con NPM, abre la terminal en la carpeta y escribe el siguiente comando `npm install`. Luego de que se instale los paquetes para ejecutar la aplicación escribe el siguinte comando `ng serve -o` La aplicacion se abrira en el navegador con la ruta`http://localhost:3000/`.
+Una vez descargado la aplicación lo primero que se debe hacer es instalar los paquetes con NPM, abre la terminal en la carpeta y escribe el siguiente comando `npm install`. Luego de que se instale los paquetes para ejecutar la aplicación escribe el siguinte comando `ng serve -o` La aplicacion se abrira en el navegador con la ruta`http://localhost:4200/`.

@@ -3,7 +3,19 @@ li {
 }
 
 a {
-  text-decoration: none;
-
   font-size: 19px;
+  color: cyan;
+  letter-spacing: 1px;
+  transition: ease 0.5s;
+  font-style: italic;
+  font-weight: 600;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+nav {
+  padding: 10px;
+  border-bottom: solid 3px rgb(8, 196, 186);
 }
