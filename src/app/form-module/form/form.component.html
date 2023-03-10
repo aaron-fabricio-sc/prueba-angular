@@ -1,0 +1,136 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <h3>Formulario reactivo</h3>
+      <p>
+        Los campos del formulario tienes sus respectivas validaciones.
+        Obligadamente son requiridos y el campo nombre y apellido tiene que
+        tener mas de dos caracteres.
+      </p>
+    </div>
+    <div class="col-12 col-md-8">
+      <form [formGroup]="miFormulario">
+        <div class="my-1">
+          <label>
+            Nombre:
+            <div>
+              <input
+                class="form-control"
+                type="text"
+                formControlName="nombre"
+              />
+            </div>
+            <div
+              class="bg-danger text-white p-2 rounded p-2"
+              *ngIf="miFormulario.get('nombre')?.touched && miFormulario.get('nombre')?.errors?.['required']"
+            >
+              Este campo nombre es requerido.
+            </div>
+            <div
+              class="bg-danger text-white p-2 rounded"
+              *ngIf="miFormulario.get('nombre')?.touched && miFormulario.get('nombre')?.errors?.['minlength']"
+            >
+              El nombre tiene que ser mas de 2 caractere
+            </div>
+          </label>
+        </div>
+        <div>
+          <label>
+            Apellido:
+            <div>
+              <input
+                class="form-control"
+                type="text"
+                formControlName="apellido"
+              />
+            </div>
+
+            <div
+              class="bg-danger text-white p-2 rounded"
+              *ngIf="miFormulario.get('apellido')?.touched && miFormulario.get('apellido')?.errors?.['required']"
+            >
+              Este campo apellido es requerido.
+            </div>
+            <div
+              class="bg-danger text-white p-2 rounded"
+              *ngIf="miFormulario.get('apellido')?.touched && miFormulario.get('apellido')?.errors?.['minlength']"
+            >
+              El campo apellido tiene que ser mas de 2 caracteres.
+            </div>
+          </label>
+        </div>
+        <div>
+          <label>
+            Email:
+            <div>
+              <input
+                class="form-control"
+                type="email"
+                formControlName="email"
+              />
+            </div>
+
+            <div
+              class="bg-danger text-white p-2 rounded"
+              *ngIf="miFormulario.get('email')?.touched && miFormulario.get('email')?.errors?.['required']"
+            >
+              El campo email es requerido.
+            </div>
+            <div
+              class="bg-danger text-white p-2 rounded"
+              *ngIf="miFormulario.get('email')?.touched && miFormulario.get('email')?.errors?.['email']"
+            >
+              Los datos introducidos no es un email valido.
+            </div>
+          </label>
+        </div>
+        <div>
+          <label>
+            Edad:
+
+            <div>
+              <input
+                class="form-control"
+                type="number"
+                formControlName="edad"
+              />
+            </div>
+            <div
+              class="bg-danger text-white p-2 rounded"
+              *ngIf="miFormulario.get('edad')?.touched && miFormulario.get('edad')?.errors?.['required']"
+            >
+              El campo edad es requerido.
+            </div>
+          </label>
+        </div>
+        <div>
+          <label>
+            Dirección:
+            <div>
+              <textarea
+                class="form-control"
+                formControlName="direccion"
+              ></textarea>
+            </div>
+            <div
+              class="bg-danger text-white p-2 rounded"
+              *ngIf="miFormulario.get('direccion')?.touched && miFormulario.get('direccion')?.errors?.['required']"
+            >
+              El campo Mensaje es requerido.
+            </div>
+          </label>
+        </div>
+
+        <div>
+          <button
+            class="btn btn-primary"
+            type="submit"
+            [disabled]="miFormulario.invalid"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

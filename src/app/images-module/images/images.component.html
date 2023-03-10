@@ -1,0 +1,28 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <h3>Colección de imagenes</h3>
+      <p>
+        Se uso una API publica para generar las imagenes.
+        <a href="https://digimon-api.vercel.app/api/digimon" target="_blank"
+          >API DIGIMONS</a
+        >
+      </p>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="row">
+        <div class="items col-sm-4" *ngFor="let imagen of imagenes">
+          <div class="card m-3" style="width: 10rem">
+            <img src="{{ imagen.img }}" class="card-img-top" alt="..." />
+            <div class="card_name card-body rounded">
+              <p class="card-text text-center fw-bold">
+                {{ imagen.name }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

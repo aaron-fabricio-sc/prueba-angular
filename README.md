@@ -1,6 +1,6 @@
-# PruebaAngular
+# Prueba Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
+Este Proyecto se genero con la versión version 14.2.4 de Angular.
 
 ## Development server
 
